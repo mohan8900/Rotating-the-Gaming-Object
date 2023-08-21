@@ -1,5 +1,6 @@
-# Rotating-the-Gaming-Object
-
+### EX NO:01 
+### DATE: 31.03.2022
+# <p align="center"> Rotating the Gaming Object</p>
 ## Aim:
 To develop a 3D application for rotating the gaming objects in unity.
 ## Algorithm:
@@ -16,13 +17,6 @@ Hierarchy -> Effects -> Particle system
 Create a folder in project and name as Materials
 Material folder -> Create -> Material (Name: Cylinder)
 Inspector ->Surface Inputs ->BaseMAp (Choose the color)
-Drag the Cylinder to the plane and release the mouse
-
-Create a folder in project and name as Materials
-Material folder -> Create -> Material (Name: Capsule)
-Inspector ->Surface Inputs ->BaseMAp (Choose the color)
-Drag the Capsule to the plane and release the mouse
-
 ### Start5:
 Click Hierarchy -> DirectionalLight
 Inspector -> Change the color to white (255,255,255)
@@ -37,7 +31,26 @@ To add our C# Script file to our selected object, click on the C# Script file an
 Stop
 
 ## Program:
+```c#
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
+public class NewBehaviourScript : MonoBehaviour
+{
+    void Start()
+    {
+        
+    }
+    void Update()
+    {
+        transform.RotateAround(Vector3.right,Vector3.up,40*Time.deltaTime);
+    }
+}
+
+```
 ## Output:
+![ar 1](https://user-images.githubusercontent.com/75235402/165584652-d9283ff4-72dc-4e01-8fb8-9b024d49918f.jpg)
 
 ## Result:
+Thus a 3D application for rotating the gaming objects in unity was developed.
